@@ -12,13 +12,19 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
     <header class="bg-dark py-3">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="#">Office Supplies Co.</a>
+                <a class="navbar-brand" href="#">
+                    <img src="obslogo.jpg" alt="Ohio Business Systems" id="navbar-logo" class="mr-2">
+                    Ohio Business Systems
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -45,6 +51,7 @@
             </nav>
         </div>
     </header>
+    
 
     <main>
         <section id="hero" class="d-flex align-items-center text-white text-center">
@@ -60,9 +67,9 @@
                 <div class="row">
                     <div class="col-md-6 my-auto">
                         <h2>About Us</h2>
-                        <p>We specialize in office supplies for sectors including enterprise, small business, education, and more, adapting to your unique needs.</p>
+                        <p>We specialize in office supplies...</p>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-up">
                         <img src="aboutus.webp" alt="About Us" class="img-fluid">
                     </div>
                 </div>
@@ -74,41 +81,55 @@
                 <h2 class="text-center mb-4">Our Services</h2>
                 <div class="row">
                     <!-- Example of service -->
-                    <div class="col-md-4 text-center">
-                        <div class="icon-box">
-                            <i class="fas fa-print text-primary mb-3"></i>
-                            <h5>Printing Solutions</h5>
-                            <p>High-quality printers and copiers for all your office needs.</p>
-                        </div>
-                    </div>
-                    <!-- Repeat for other services -->
-                    <div class="col-md-4 text-center">
-                        <div class="icon-box">
-                            <i class="fas fa-cogs text-primary mb-3"></i>
-                            <h5>Managed Services</h5>
-                            <p>Managed print services to optimize your print environment.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <div class="icon-box">
-                            <i class="fas fa-tools text-primary mb-3"></i>
-                            <h5>Repair Services</h5>
-                            <p>Expert repair services for printers and copiers.</p>
-                        </div>
-                    </div>
+                    <!-- Example of service 1 -->
+<div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="100">
+    <div class="icon-box">
+        <i class="fas fa-print text-primary mb-3"></i>
+        <h5>Printing Solutions</h5>
+        <p>High-quality printers and copiers for all your office needs.</p>
+    </div>
+</div>
+
+<!-- Example of service 2 -->
+<div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
+    <div class="icon-box">
+        <i class="fas fa-cogs text-primary mb-3"></i>
+        <h5>Managed Services</h5>
+        <p>Managed print services to optimize your print environment.</p>
+    </div>
+</div>
+
+<!-- Example of service 3 -->
+<div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="300">
+    <div class="icon-box">
+        <i class="fas fa-tools text-primary mb-3"></i>
+        <h5>Repair Services</h5>
+        <p>Expert repair services for printers and copiers.</p>
+    </div>
+</div>
+
                 </div>
             </div>
         </section>
 
         <section id="clients" class="py-5">
             <div class="container">
-                <h2 class="text-center mb-4">Our Clients</h2>
+                <h2 class="text-center mb-4">Our Clients</h2>\
+                <!-- Center content in the row -->
                 <div class="row">
-                    <!-- Example of client logo -->
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <img src="path_to_client_logo.jpg" alt="Client Logo" class="img-fluid">
+                    <!-- Example of client logo and center the content vertvally -->
+                    <div class="col-md-3 col-sm-6 my-3" style="display: flex; align-items: center;">
+                        <img src="columbus.png" alt="Client Logo" class="img-fluid">
                     </div>
                     <!-- Repeat for other clients -->
+                    <div class="col-md-3 col-sm-6 my-3" style="display: flex; align-items: center;">
+                        <img src="casino.jpg" alt="Client Logo" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3" style="display: flex; align-items: center;">
+                        <img src="SDI_1.png" alt="Client Logo" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3" style="display: flex; align-items: center;">
+                        <img src="zoo.jpg" alt="Client Logo" class="img-fluid">
                 </div>
             </div>
         </section>
@@ -150,5 +171,13 @@
                 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.3/dist/umd/popper.min.js"></script>
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                <script>
+                    AOS.init({
+                        duration: 800, // values from 0 to 3000, with step 50ms
+                        easing: 'ease-in-out-back', // default easing for AOS animations
+                        once: true, // whether animation should happen only once - while scrolling down
+                        mirror: false, // whether elements should animate out while scrolling past them
+                    });
+                </script>
             </body>
             </html>                
