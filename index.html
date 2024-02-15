@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office Supplies Co. - Printers and Copiers</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="bg-dark py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">Office Supplies Co.</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="d-flex align-items-center text-white text-center">
+            <div class="container">
+                <h1 class="display-4">Your Trusted Partner in Office Solutions</h1>
+                <p class="lead">Serving the Columbus Ohio market since 1971.</p>
+                <a href="#services" class="btn btn-primary btn-lg">Explore Services</a>
+            </div>
+        </section>
+
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 my-auto">
+                        <h2>About Us</h2>
+                        <p>We specialize in office supplies for sectors including enterprise, small business, education, and more, adapting to your unique needs.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="aboutus.webp" alt="About Us" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Our Services</h2>
+                <div class="row">
+                    <!-- Example of service -->
+                    <div class="col-md-4 text-center">
+                        <div class="icon-box">
+                            <i class="fas fa-print text-primary mb-3"></i>
+                            <h5>Printing Solutions</h5>
+                            <p>High-quality printers and copiers for all your office needs.</p>
+                        </div>
+                    </div>
+                    <!-- Repeat for other services -->
+                    <div class="col-md-4 text-center">
+                        <div class="icon-box">
+                            <i class="fas fa-cogs text-primary mb-3"></i>
+                            <h5>Managed Services</h5>
+                            <p>Managed print services to optimize your print environment.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="icon-box">
+                            <i class="fas fa-tools text-primary mb-3"></i>
+                            <h5>Repair Services</h5>
+                            <p>Expert repair services for printers and copiers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="clients" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Our Clients</h2>
+                <div class="row">
+                    <!-- Example of client logo -->
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <img src="path_to_client_logo.jpg" alt="Client Logo" class="img-fluid">
+                    </div>
+                    <!-- Repeat for other clients -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Contact Us</h2>
+                <form>
+                <div class="form-row">
+                <div class="form-group col-md-6">
+                <label for="inputName">Name</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Your Name">
+                </div>
+                <div class="form-group col-md-6">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Your Email">
+                </div>
+                </div>
+                <div class="form-group">
+                <label for="inputMessage">Message</label>
+                <textarea class="form-control" id="inputMessage" rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                </div>
+                </section>
+                </main>
+                <footer class="bg-dark text-white py-4">
+                    <div class="container text-center">
+                        <p>&copy; 2024 Office Supplies Co. All rights reserved.</p>
+                        <div>
+                            <a href="#" class="text-white mx-2">Privacy Policy</a>|
+                            <a href="#" class="text-white mx-2">Terms of Use</a>
+                        </div>
+                    </div>
+                </footer>
+                
+                <!-- Bootstrap JS, Popper.js, and jQuery -->
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.3/dist/umd/popper.min.js"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            </body>
+            </html>                
