@@ -31,14 +31,14 @@ body {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    /* color white */
-    color: #fff;
+    /* color should be darker white to make it visible on the background */
+    color: #D3D3D3;
 }
 
 #hero p {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
-    color: #fff;
+    color: #D3D3D3;
 }
 
 #hero .btn {
