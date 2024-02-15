@@ -18,11 +18,11 @@
 </head>
 
 <body>
-    <header class="bg-dark py-3">
+    <header class="bg-light py-3" style="position: sticky; top: 0; z-index: 1000;">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#">
-                    <img src="obslogo.jpg" alt="Ohio Business Systems" id="navbar-logo" class="mr-2">
+                    <img src="obslogosmall.webp" alt="Ohio Business Systems" id="navbar-logo" class="mr-2">
                     Ohio Business Systems
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -53,7 +53,6 @@
     </header>
     
 
-    <main>
         <section id="hero" class="d-flex align-items-center text-white text-center">
             <div class="container">
                 <h1 class="display-4">Your Trusted Partner in Office Solutions</h1>
@@ -61,7 +60,7 @@
                 <a href="#services" class="btn btn-primary btn-lg">Explore Services</a>
             </div>
         </section>
-
+        <main>
         <section id="about" class="py-5">
             <div class="container">
                 <div class="row">
@@ -157,15 +156,22 @@
                 </div>
                 </section>
                 </main>
-                <footer class="bg-dark text-white py-4">
+                <footer class="bg-dark text-white py-4" style="bottom: 0; z-index: 1000;">
                     <div class="container text-center">
-                        <p>&copy; 2024 Office Supplies Co. All rights reserved.</p>
-                        <div>
-                            <a href="#" class="text-white mx-2">Privacy Policy</a>|
-                            <a href="#" class="text-white mx-2">Terms of Use</a>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p>&copy; 2024 Office Supplies Co. All rights reserved.</p>
+                                <p>2289 & 2309 W Dublin Granville Rd Worthington Ohio 43085</p>
+                                <p>Tel. 614-846-1510</p>
+                                <p>Email. <a href="mailto:Sales@ohiobusinesssystems.com" class="footer-email">Sales@ohiobusinesssystems.com</a></p>
+                                <div>
+                                    <a href="#" class="text-white mx-2">Privacy Policy</a>|
+                                    <a href="#" class="text-white mx-2">Terms of Use</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </footer>
+                </footer>                
                 
                 <!-- Bootstrap JS, Popper.js, and jQuery -->
                 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -179,5 +185,31 @@
                         mirror: false, // whether elements should animate out while scrolling past them
                     });
                 </script>
+                <script>
+                    document.addEventListener('DOMContentLoaded', (event) => {
+                        const heroSection = document.getElementById('hero');
+                        const heroHeight = heroSection.offsetHeight;
+                        const aboutSection = document.getElementById('about');
+                    
+                        function onScroll() {
+                            // Get the scroll position of the page
+                            const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+                    
+                            // Check if we've scrolled past the hero section
+                            if (scrollPosition > heroHeight) {
+                                heroSection.classList.add('unfix-hero');
+                                aboutSection.style.paddingTop = '0px'; // Remove padding when hero is not fixed
+                            } else {
+                                heroSection.classList.remove('unfix-hero');
+                                aboutSection.style.paddingTop = `${heroHeight}px`; // Add padding to push the about section below the hero
+                            }
+                        }
+                    
+                        // Listen for scroll events
+                        window.addEventListener('scroll', onScroll);
+                    });
+                    </script>
+                    
+                
             </body>
             </html>                
